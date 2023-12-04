@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #c961ff, #ffddb1);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button {
+    padding: 12px 24px;
+    background: #ffcc00;
+    border: 2px solid #cc9900;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background-image: url('src/warning.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-size: 30px 30px;
+}
+
+
+.button:hover {
+    background-color: #ff6d6d;
+    border-color: #ff0000;
+    color: #333;
+}
+
+.dialogbutton {
+    padding: 12px 24px;
+    background: #a8d5a8;
+    border: 2px solid #5cc35c;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background-image: url('src/safe.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    background-size: 30px 30px;
+}
+
+.dialogbutton:hover {
+    background-color: #8cff8c;
+    border-color: #00ff00;
+    color: #333;
+}
+
+.dialog {
+    min-width: 400px;
+    padding: 25px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    animation: dialogSlide 0.3s;
+}
+
+.dialog::backdrop {
+    background: rgba(168, 98, 98, 0.849);
+    animation: dialodBackdropFade 0.2s;
+}
+
+@keyframes dialogSlide {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+@keyframes dialodBackdropFade {
+    from {
+        background: rgba(0, 0, 0, 0);
+    }
+}
